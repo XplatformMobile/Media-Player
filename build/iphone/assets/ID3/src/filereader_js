@@ -1,0 +1,1 @@
+var BinaryFile=require("./binaryfile"),FileAPIReader=function(t,e){return function(n,r,i){var o=e||new FileReader;o.onload=function(t){var e=t.target.result;r(new BinaryFile(e))},o.readAsBinaryString(t)}};module.exports=FileAPIReader;
